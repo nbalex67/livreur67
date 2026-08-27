@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livreur67 - Résistance et Organisation</title>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K07V9N5ZWT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K07V9N5ZWT');
-</script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07V9N5ZWT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-K07V9N5ZWT');
+    </script>
 
     <style>
         body {
@@ -22,18 +22,47 @@
             color: #f8fafc;
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+        /* منوی انتخاب زبان بالا */
+        .lang-bar {
+            background-color: #1e293b;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #334155;
+            color: #ffffff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .lang-btn:hover {
+            background-color: #ef4444;
         }
         .container {
             max-width: 750px;
-            padding: 30px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-lang {
+            margin-bottom: 60px;
+            padding-top: 20px;
+            border-top: 1px dashed #1e293b;
         }
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #ef4444;
             margin-bottom: 20px;
             text-transform: uppercase;
@@ -57,9 +86,19 @@
             text-align: left;
             border-radius: 4px;
         }
+        /* تنظیم جهت برای زبان‌های راست‌چین */
+        .rtl-lang {
+            direction: rtl;
+            text-align: right;
+        }
+        .rtl-lang .revolution-box {
+            border-left: none;
+            border-right: 4px solid #ef4444;
+            text-align: right;
+        }
         .revolution-title {
             color: #f87171;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             margin-bottom: 10px;
             text-transform: uppercase;
@@ -72,20 +111,98 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Plateforme de Lutte et d'Action des Livreurs</h1>
-        <p>Ici, ce n'est pas un site de plus. C'est l'outil de notre <span class="highlight">guerre contre les géants de la livraison</span>.</p>
-        <p>Nous sommes ici pour imposer nos règles, <span class="highlight">organiser nos grèves</span>, structurer nos mouvements et bâtir un rapport de force inébranlable à Strasbourg.</p>
-        <p>L'ère de l'exploitation silencieuse est terminée. Préparez-vous.</p>
 
-        <div class="revolution-box">
-            <div class="revolution-title">⚡ Première action : La Révolution de la Course Unique</div>
-            <p>Fini d'accepter leurs miettes groupées ! Leurs algorithmes veulent nous imposer 2 ou 3 commandes à la fois pour un prix dérisoire. C'est terminé.</p>
-            <p>Notre premier mouvement : <span class="highlight">n'accepter qu'une seule commande à la fois</span>. En forçant la pénurie artificielle de livreurs connectés sur les courses groupées, nous allons casser leur système et les obliger à faire exploser les tarifs automatiquement.</p>
-            <p><span class="highlight" style="color: #ef4444;">Préparez-vous. La date de lancement sera bientôt annoncée.</span></p>
+    <!-- دکمه‌های تغییر زبان در بالای صفحه -->
+    <div class="lang-bar">
+        <a href="#fr" class="lang-btn">Français</a>
+        <a href="#en" class="lang-btn">English</a>
+        <a href="#ar" class="lang-btn">العربية</a>
+        <a href="#ur" class="lang-btn">اردو</a>
+        <a href="#ps" class="lang-btn">پښتو</a>
+    </div>
+
+    <div class="container">
+
+        <!-- 1. فرانسه (زبان اصلی) -->
+        <div id="fr" class="section-lang">
+            <h1>Plateforme de Lutte et d'Action des Livreurs</h1>
+            <p>Ici, ce n'est pas un site de plus. C'est l'outil de notre <span class="highlight">guerre contre les géants de la livraison</span>.</p>
+            <p>Nous sommes ici pour imposer nos règles, <span class="highlight">organiser nos grèves</span>, structurer nos mouvements et bâtir un rapport de force inébranlable à Strasbourg.</p>
+            <p>L'ère de l'exploitation silencieuse est terminée. Préparez-vous.</p>
+
+            <div class="revolution-box">
+                <div class="revolution-title">⚡ Première action : La Révolution de la Course Unique</div>
+                <p>Fini d'accepter leurs miettes groupées ! Leurs algorithmes veulent nous imposer 2 ou 3 commandes à la fois pour un prix dérisoire. C'est terminé.</p>
+                <p>Notre premier mouvement : <span class="highlight">n'accepter qu'une seule commande à la fois</span>. En forçant la pénurie artificielle de livreurs connectés sur les courses groupées, nous allons casser leur système et les obliger à faire exploser les tarifs automatiquement.</p>
+                <p><span class="highlight" style="color: #ef4444;">Préparez-vous. La date de lancement sera bientôt annoncée.</span></p>
+            </div>
+            <div class="footer-note">Livreur67 — Solidarité, Action, Résistance à Strasbourg.</div>
         </div>
 
-        <div class="footer-note">Livreur67 — Solidarité, Action, Résistance à Strasbourg.</div>
+        <!-- 2. انگلیسی -->
+        <div id="en" class="section-lang">
+            <h1>Couriers' Struggle and Action Platform</h1>
+            <p>This is not just another website. This is the tool for our <span class="highlight">war against the delivery giants</span>.</p>
+            <p>We are here to impose our rules, <span class="highlight">organize our strikes</span>, structure our movements, and build an unbreakable balance of power in Strasbourg.</p>
+            <p>The era of silent exploitation is over. Get ready.</p>
+
+            <div class="revolution-box">
+                <div class="revolution-title">⚡ First Action: The Single Order Revolution</div>
+                <p>No more accepting their bundled crumbs! Their algorithms want to force 2 or 3 orders on us at once for a pittance. That's over.</p>
+                <p>Our first movement: <span class="highlight">accept only one order at a time</span>. By forcing an artificial shortage of available couriers for stacked deliveries, we will break their system and force them to skyrocket the rates automatically.</p>
+                <p><span class="highlight" style="color: #ef4444;">Get ready. The launch date will be announced soon.</span></p>
+            </div>
+            <div class="footer-note">Livreur67 — Solidarity, Action, Resistance in Strasbourg.</div>
+        </div>
+
+        <!-- 3. عربی -->
+        <div id="ar" class="section-lang rtl-lang">
+            <h1>منصة نضال وحركة عمال التوصيل</h1>
+            <p>هذا ليس مجرد موقع إلكتروني عابر. هذه هي أداة <span class="highlight">حربنا ضد عمالقة التوصيل</span>.</p>
+            <p>نحن هنا لنفرض قواعدنا، و<span class="highlight">نُنظم إضراباتنا</span>، ونبني توازن قوى لا يُقهر في ستراسبورغ.</p>
+            <p>لقد انتهى عصر الاستغلال الصامت. استعدوا.</p>
+
+            <div class="revolution-box">
+                <div class="revolution-title">⚡ التحرك الأول: ثورة الطلب الفردي</div>
+                <p>انتهى وقت قبول الفتات الجماعي! خوارزمياتهم تريد أن تفرض علينا طلبين أو ثلاثة في نفس الوقت بثمن زهيد. لقد انتهى ذلك.</p>
+                <p>تحركنا الأول: <span class="highlight">قبول طلب واحد فقط في كل مرة</span>. من خلال فرض نقص مصطنع في عدد السعاة المتاحين للطلبات المجمعة، سنقوم بتحطيم نظامهم وإجبارهم على رفع الأسعار تلقائياً.</p>
+                <p><span class="highlight" style="color: #ef4444;">استعدوا. سيتم الإعلان عن موعد الإطلاق قريباً.</span></p>
+            </div>
+            <div class="footer-note">Livreur67 — تضامن، نضال، مقاومة في ستراسبورغ.</div>
+        </div>
+
+        <!-- 4. اردو -->
+        <div id="ur" class="section-lang rtl-lang">
+            <h1>ڈلیوری رائیڈرز کی جدوجہد اور عمل کا پلیٹ فارم</h1>
+            <p>یہ صرف ایک اور ویب سائٹ نہیں ہے۔ یہ <span class="highlight">ڈلیوری کے جنات کے خلاف ہماری جنگ</span> کا ہتھیار ہے۔</p>
+            <p>ہم یہاں اپنے اصول نافذ کرنے، <span class="highlight">اپنی ہڑتالوں کو منظم کرنے</span>، اور س്ടراسبورگ (Strasbourg) میں طاقت کا ایک اٹل توازن قائم کرنے آئے ہیں۔</p>
+            <p>خاموش استحصال کا دور ختم ہو چکا ہے۔ تیار ہو جائیں۔</p>
+
+            <div class="revolution-box">
+                <div class="revolution-title">⚡ پہلی کارروائی: سنگل آرڈر انقلاب (Single Order Revolution)</div>
+                <p>ان کے گٹھے ہوئے ٹکڑے قبول کرنا بند! ان کے الگورتھم ہمیں معمولی قیمت پر ایک ساتھ 2 یا 3 آرڈر دینے کی کوشش کرتے ہیں۔ اب یہ ختم ہوا۔</p>
+                <p>ہماری پہلی تحریک: <span class="highlight">ایک وقت میں صرف ایک آرڈر قبول کرنا</span>۔ اسٹیکڈ ڈلیوریز کے لیے دستیاب رائیڈرز کی مصنوعی قلت پیدا کر کے، ہم ان کے نظام کو توڑ دیں گے اور انہیں خود بخود ریٹس آسمان پر پہنچانے پر مجبور کر دیں گے۔</p>
+                <p><span class="highlight" style="color: #ef4444;">تیار ہو جائیں۔ لانچ کی تاریخ کا جلد اعلان کیا جائے گا۔</span></p>
+            </div>
+            <div class="footer-note">Livreur67 — یکجہتی، عمل، مزاحمت، س്ടراسبورگ۔</div>
+        </div>
+
+        <!-- 5. پشتو -->
+        <div id="ps" class="section-lang rtl-lang">
+            <h1>د ډلیوري کارمندانو د مبارزې او عمل پلاتفورم</h1>
+            <p>دا یوازې یو بل ویبسایټ نه دی. دا <span class="highlight">د ډلیوري لویو شرکتونو پر ضد زموږ د جګړې</span> وسله ده.</p>
+            <p>موږ دلته راغلي یو ترڅو خپل اصول تحمیل کړو، <span class="highlight">خپل اعتصابونه تنظیم کړو</span>، او په سټراسبورګ کې د ځواک یوه نه ماتیدونکې توازن رامینځته کړو.</p>
+            <p>د خاموش استثمار دور پای ته رسیدلی دی. چمتو اوسئ.</p>
+
+            <div class="revolution-box">
+                <div class="revolution-title">⚡ لومړی اقدام: د یو واحد آرډر انقلاب</div>
+                <p>نور د دوی ډله ایز او ارزانه آرډرونه نه منو! د دوی الګوریتمونه غواړي په ناڅیزه بیه په یو وخت کې ۲ یا ۳ آرډرونه پر موږ وټپي. دا نور پای ته رسیدلي.</p>
+                <p>زموږ لومړی غورځنګ: <span class="highlight">په یو وخت کې یوازې یو آرډر منل</span>. د ګروپي ډلیوریو لپاره د آنلاین پیکونو مصنوعي کمښت په رامینځته کولو سره، موږ به د دوی سیستم مات کړو او دوی به مجبور کړو چې په اتوماتیک ډول نرخونه لوړ کړي.</p>
+                <p><span class="highlight" style="color: #ef4444;">چمتو اوسئ. د پیل نیټه به ژر اعلان شي.</span></p>
+            </div>
+            <div class="footer-note">Livreur67 — پیوستون، عمل، مقاومت په سټراسبورګ کې.</div>
+        </div>
+
     </div>
 </body>
 </html>
